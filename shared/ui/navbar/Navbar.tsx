@@ -16,9 +16,9 @@ const Navbar: FC = () => {
         <nav className={styles.nav}>
             <div className={styles.logo}>
                 <Image
-                    src='/logo.png'
-                    width={100}
-                    height={80}
+                    src='/logo.svg'
+                    width={80}
+                    height={60}
                     alt='Vav remont'
                 />
             </div>
