@@ -7,7 +7,7 @@ const Header: FC = () => {
         <header
             className={css`
                 padding: 20px;
-                background: #f7f8f7;
+                background: #ffe491;
             `}
         >
             <Navbar />
