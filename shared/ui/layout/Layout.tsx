@@ -1,13 +1,12 @@
-import Header from "../header/Header";
-import Footer from "../footer/Footer";
-import React, {FC} from "react";
-import styled from "@emotion/styled";
+import Header from '../header/Header'
+import Footer from '../footer/Footer'
+import React, { FC } from 'react'
 
-const Layout:FC = ({children}) => {
+const Layout: FC = ({ children }) => {
     return (
         <React.Fragment>
             <Header />
-                {children}
+            {children}
             <Footer />
         </React.Fragment>
     )
