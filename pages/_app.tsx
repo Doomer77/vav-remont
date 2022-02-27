@@ -7,7 +7,7 @@ import React from 'react'
 const MyApp = ({ Component, pageProps }: AppProps) => (
     <Layout>
         <Head>
-            <link href='https://fonts.googleapis.com/css2?family=Roboto&display=swap' />
+            <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet" />
         </Head>
         <main>
             <Component {...pageProps} />

@@ -1,13 +1,13 @@
 import React, { FC } from 'react'
 import Heading from '../../shared/ui/heading/Heading'
 
-const Contacts: FC = () => {
+const Repair: FC = () => {
     return (
         <div>
-            <Heading text='Contacts' />
-            <div>Contacts</div>
+            <Heading text='Repair' />
+            <div>Repair</div>
         </div>
     )
 }
 
-export default Contacts
+export default Repair

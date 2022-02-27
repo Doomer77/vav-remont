@@ -5,11 +5,11 @@ import { LayoutProps } from "./types";
 
 const Layout: FC<LayoutProps> = ({ children }) => {
     return (
-        <React.Fragment>
+        <div>
             <Header />
             {children}
             <Footer />
-        </React.Fragment>
+        </div>
     )
 }
 export default Layout

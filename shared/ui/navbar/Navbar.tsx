@@ -1,36 +1,26 @@
-import { FC } from 'react'
-import Image from 'next/image'
-import { useRouter } from 'next/router'
+import React, { FC } from 'react'
+import { routes } from './lib/routes'
 import Link from 'next/link'
-import styles from './Navbar.module.scss'
-
-const navigation: { id: number; title: string; path: string }[] = [
-    { id: 1, title: 'Home', path: '/' },
-    { id: 2, title: 'Posts', path: '/posts' },
-    { id: 3, title: 'Contacts', path: '/contacts' },
-]
+import { useRouter } from 'next/router'
+import Logo from '../logo/Logo'
+import styles from '../../../styles/Navbar.module.scss'
 
 const Navbar: FC = () => {
     const { pathname } = useRouter()
     return (
         <nav className={styles.nav}>
             <div className={styles.logo}>
-                <Image
-                    src='/logo.svg'
-                    width={80}
-                    height={60}
-                    alt='Vav remont'
-                />
+                <Logo />
             </div>
-            <div className={styles.links}>
-                {navigation.map(({ id, title, path }) => {
+            <div className={styles.nav__links}>
+                {routes.map(({ id, title, path }) => {
                     return (
                         <Link key={id} href={path}>
                             <a
                                 className={
                                     pathname === path
                                         ? styles.active
-                                        : undefined
+                                        : styles.nav__link
                                 }
                             >
                                 {title}
@@ -38,6 +28,11 @@ const Navbar: FC = () => {
                         </Link>
                     )
                 })}
+            </div>
+            <div>
+                <Link href='tel:+74951234567'>
+                    <a className={styles.nav__link}>8(967)118-92-52</a>
+                </Link>
             </div>
         </nav>
     )

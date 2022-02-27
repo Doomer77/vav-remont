@@ -1,0 +1,36 @@
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    &__links{
+        display: flex;
+    }
+    &__link:link,
+    &__link:visited {
+        display: block;
+        margin-right: 2rem;
+        font-family: 'Rubik', sans-serif;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #fc982c;
+        transition: all .3s;
+    }
+    &__link:hover {
+        border-bottom: 2px solid #fc982c;
+        transition: all 0.2s;
+    }
+    .active{
+        display: block;
+        margin-right: 2rem;
+        font-family: 'Rubik', sans-serif;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #fc982c;
+        transition: all .3s;
+        border-bottom: 2px solid #fc982c;
+        transition: all 0.2s;
+    }
+}
