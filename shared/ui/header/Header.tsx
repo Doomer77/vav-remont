@@ -2,10 +2,6 @@ import React, { FC } from 'react'
 import Navbar from '../navbar/Navbar'
 
 const Header: FC = () => {
-    return (
-        <header>
-            <Navbar />
-        </header>
-    )
+    return <Navbar />
 }
 export default Header
