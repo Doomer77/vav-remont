@@ -1,8 +1,10 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
+import Link from 'next/link'
 import Heading from '../../shared/ui/heading/Heading'
-import { IContacts } from './types'
+import { IContacts } from '../../types/types'
+import { GetStaticProps } from "next";
 
-export const getStaticProps = async () => {
+export const getStaticProps:GetStaticProps = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/users')
     const data = await response.json()
 
@@ -26,7 +28,9 @@ const Contacts: FC<IContacts> = ({ contacts }) => {
                     contacts.map((item) => {
                         return (
                             <li key={item.id}>
-                                {item.id} {item.name} {item.email}
+                                <Link href={`/contacts/${item.id}`}>
+                                    {item.name}
+                                </Link>
                             </li>
                         )
                     })}
