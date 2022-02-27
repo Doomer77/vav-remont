@@ -22,7 +22,7 @@ export const getStaticProps:GetStaticProps = async () => {
 const Contacts: FC<IContacts> = ({ contacts }) => {
     return (
         <div>
-            <Heading text='Contacts' />
+            <Heading text='Контакты' />
             <ul>
                 {contacts &&
                     contacts.map((item) => {
