@@ -5,31 +5,40 @@
     align-items: center;
     padding: 1.4rem 2rem;
     background: rgba(0, 0, 0, 0.8);
-    &__links{
+    &__links {
         display: flex;
     }
     &__link:link,
     &__link:visited {
         display: block;
-        margin-right: 2rem;
+        padding: 1rem 0;
+
         font-family: 'Rubik', sans-serif;
         font-size: 2rem;
         text-decoration: none;
         color: #fc982c;
-        transition: all .3s;
+        transition: all 0.3s;
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
     }
+
     &__link:hover {
         border-bottom: 2px solid #fc982c;
         transition: all 0.2s;
+        padding: 1rem 0;
     }
-    .active{
+    .active {
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
         display: block;
-        margin-right: 2rem;
+        padding: 1rem 0;
         font-family: 'Rubik', sans-serif;
         font-size: 2rem;
         text-decoration: none;
         color: #fc982c;
-        transition: all .3s;
+        transition: all 0.3s;
         border-bottom: 2px solid #fc982c;
         transition: all 0.2s;
     }
