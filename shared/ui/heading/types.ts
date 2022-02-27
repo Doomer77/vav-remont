@@ -1,6 +1,6 @@
 import React from 'react'
 
-export interface IHeading {
+export interface HeadingTypes {
     text: string
     tag?: React.ComponentType | string
 }

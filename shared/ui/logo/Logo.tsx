@@ -6,13 +6,15 @@ import styles from './Logo.module.scss'
 const Logo: FC = () => {
     return (
         <Link href='/'>
-            <Image
-                src='/logo.svg'
-                width={115}
-                height={74}
-                alt='Vav remont'
-                className={styles.logo}
-            />
+            <a href='/'>
+                <Image
+                    src='/logo.svg'
+                    width={115}
+                    height={74}
+                    alt='Vav remont'
+                    className={styles.logo}
+                />
+            </a>
         </Link>
     )
 }

@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import styles from './Socials.module.scss'
 import React, { FC } from 'react'
-import { ISocialInfo } from './types'
+import { SociaslTypes } from './types'
 
-const Socials: FC<ISocialInfo> = ({ socials }) => {
+const Socials: FC<SociaslTypes> = ({ socials }) => {
     if (!socials) {
         return null
     }

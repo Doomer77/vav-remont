@@ -1,9 +1,9 @@
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
 import React, { FC } from 'react'
-import { LayoutProps } from "./types";
+import { LayoutTypes } from './types'
 
-const Layout: FC<LayoutProps> = ({ children }) => {
+const Layout: FC<LayoutTypes> = ({ children }) => {
     return (
         <div>
             <Header />

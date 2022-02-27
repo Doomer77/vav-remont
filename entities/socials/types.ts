@@ -1,9 +1,9 @@
-export interface ISocial {
+export interface SocialTypes {
     id: number
     path: string
     icon: string
 }
 
-export interface ISocialInfo {
-    socials: ISocial[]
+export interface SociaslTypes {
+    socials: SocialTypes[]
 }
