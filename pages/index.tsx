@@ -1,8 +1,6 @@
 import React, { FC } from 'react'
-import Heading from '../shared/ui/heading/Heading'
 import { SociaslTypes } from '../entities/socials/types'
-import styles from '../styles/Home.module.scss'
-import Socials from '../entities/socials/Socials'
+import Header from '../shared/ui/header/Header'
 
 export const getStaticProps = async () => {
     try {
@@ -25,10 +23,9 @@ export const getStaticProps = async () => {
     }
 }
 
-const Home: FC<SociaslTypes> = ({ socials }) => (
-    <div className={styles.wrapper}>
-        <Heading text='Home' />
-        <Socials socials={socials} />
+const Home: FC<SociaslTypes> = () => (
+    <div>
+        <Header />
     </div>
 )
 

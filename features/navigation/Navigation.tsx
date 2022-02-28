@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { routes } from '../lib/routes'
+import { routes } from './lib/routes'
 import { useRouter } from 'next/router'
 import styles from './Navigation.module.scss'
 import Link from 'next/link'
