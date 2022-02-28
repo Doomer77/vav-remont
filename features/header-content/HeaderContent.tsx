@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import styles from '../../styles/Header.module.scss'
 
-const HeaderContent: FC = () => {
+export const HeaderContent: FC = () => {
     return (
         <div className={styles.header__content}>
             <h1 className={styles.header__heading}>Дизайн и отделка</h1>
@@ -14,5 +14,3 @@ const HeaderContent: FC = () => {
         </div>
     )
 }
-
-export default HeaderContent

@@ -1,13 +1,13 @@
 import React, { FC } from 'react'
-import HeaderContent from '../../../features/header-content/HeaderContent'
+import { HeaderContent } from '../../../features/header-content'
 import styles from '../../../styles/Header.module.scss'
-import Footer from '../footer/Footer'
+import Navbar from '../navbar/Navbar'
 
 const Header: FC = () => {
     return (
         <header className={styles.header}>
+            <Navbar />
             <HeaderContent />
-            <Footer visible={false} />
         </header>
     )
 }

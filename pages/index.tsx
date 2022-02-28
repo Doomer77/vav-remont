@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 import { SociaslTypes } from '../entities/socials/types'
 import Header from '../shared/ui/header/Header'
 
@@ -23,10 +23,15 @@ export const getStaticProps = async () => {
     }
 }
 
-const Home: FC<SociaslTypes> = () => (
-    <div>
-        <Header />
-    </div>
-)
+const Home: FC<SociaslTypes> = () => {
+    return(
+        <div>
+            <Header />
+        </div>
+    )
+}
+
+
+
 
 export default Home
