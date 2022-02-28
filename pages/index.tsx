@@ -1,34 +1,17 @@
-import React, { FC, useState } from 'react'
-import { SociaslTypes } from '../entities/socials/types'
+import React, { FC, useEffect, useState } from 'react'
 import Header from '../shared/ui/header/Header'
+import { CircularProgress } from '@mui/material'
 
-export const getStaticProps = async () => {
-    try {
-        const response = await fetch(`${process.env.API_HOST}/socials`)
-        const data = await response.json()
+const Home:FC = () => {
+    const [page, setPage] = useState<boolean>(true)
+    useEffect(() => {
+        setTimeout(() => {
+            setPage(false)
+        }, 1000)
+    },[])
 
-        if (!data) {
-            return {
-                notFound: true,
-            }
-        }
+    return page ? <div className='loader-box'><CircularProgress color="inherit" /></div> : <div><Header/></div>
 
-        return {
-            props: { socials: data },
-        }
-    } catch {
-        return {
-            props: { socials: null },
-        }
-    }
-}
-
-const Home: FC<SociaslTypes> = () => {
-    return(
-        <div>
-            <Header />
-        </div>
-    )
 }
 
 

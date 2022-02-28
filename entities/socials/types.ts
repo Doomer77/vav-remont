@@ -4,6 +4,6 @@ export interface SocialTypes {
     icon: string
 }
 
-export interface SociaslTypes {
+export interface SocialsTypes {
     socials: SocialTypes[]
 }
