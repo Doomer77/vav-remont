@@ -1,5 +1,9 @@
 import React, { FC } from 'react'
 import Heading from '../heading/Heading'
+import Socials from '../../../entities/socials/Socials'
+import { socials } from '../../../pages/api/data/socials'
+import { format } from 'date-fns'
+import styles from '../../../styles/Footer.module.scss'
 
 interface FooterTypes {
     visible: boolean
@@ -29,8 +33,11 @@ export const getStaticProps = async () => {
 const Footer: FC<FooterTypes> = ({ visible }) => {
     if (visible) {
         return (
-            <footer>
-                <Heading tag='h3' text='Created by P.J.' />
+            <footer className={styles.footer}>
+                <Socials socials={socials} />
+                <p className={styles.footer__text}>
+                    {`Copyright © ${format(new Date(), 'yyyy')} Vav Remont`}
+                </p>
             </footer>
         )
     }

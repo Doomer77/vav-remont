@@ -1,0 +1,12 @@
+.footer{
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__text{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    color: white;
+  }
+}

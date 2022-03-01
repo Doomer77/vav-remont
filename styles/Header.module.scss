@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-between;
     &__navbar {
         display: flex;
         width: 100%;
@@ -22,7 +23,6 @@
         position: relative;
     }
     &__content {
-        padding: 12rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -45,7 +45,7 @@
         letter-spacing: 0.6rem;
     }
     &__text_sub {
-        margin-bottom: 13rem;
+        margin-bottom: 5rem;
         font-family: 'Playfair Display', serif;
         font-style: italic;
         font-size: 2.2rem;
