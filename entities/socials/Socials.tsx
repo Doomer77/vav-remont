@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import styles from './Socials.module.scss'
 import React, { FC } from 'react'
 import { SocialsTypes } from './types'
+
+import { SocialsList, SocialsListItem } from './styles'
 
 const Socials: FC<SocialsTypes> = ({ socials }) => {
     if (!socials) {
@@ -9,10 +9,10 @@ const Socials: FC<SocialsTypes> = ({ socials }) => {
     }
 
     return (
-        <ul className={styles.socials}>
+        <SocialsList>
             {socials &&
                 socials.map((item) => (
-                    <li key={item.id}>
+                    <SocialsListItem key={item.id}>
                         <a
                             href={item.path}
                             target='_blank'
@@ -23,9 +23,9 @@ const Socials: FC<SocialsTypes> = ({ socials }) => {
                                 aria-hidden='true'
                             />
                         </a>
-                    </li>
+                    </SocialsListItem>
                 ))}
-        </ul>
+        </SocialsList>
     )
 }
 
