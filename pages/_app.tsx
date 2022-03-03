@@ -20,9 +20,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
                 rel='stylesheet'
             ></link>
         </Head>
-        <main>
-            <Component {...pageProps} />
-        </main>
+        <Component {...pageProps} />
     </Layout>
 )
 

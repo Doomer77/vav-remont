@@ -2,15 +2,15 @@ import React, { FC } from 'react'
 import Navigation from '../../../features/navigation/Navigation'
 import Phone from '../../../entities/phone/Phone'
 import Logo from '../logo/Logo'
-import styles from '../../../styles/Header.module.scss'
+import { HeaderNavbar } from './styles'
 
 const Navbar: FC = () => {
     return (
-        <div className={styles.header__navbar}>
+        <HeaderNavbar>
             <Logo />
             <Navigation />
             <Phone />
-        </div>
+        </HeaderNavbar>
     )
 }
 export default Navbar
