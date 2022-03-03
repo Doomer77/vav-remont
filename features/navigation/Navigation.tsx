@@ -11,13 +11,11 @@ const Navigation: FC = () => {
             {routes.map(({ id, title, path }) => {
                 return (
                     <Link key={id} href={path} passHref>
-                        <a className={NavLink}>
-                            {pathname === path ? (
-                                <NavLinkActive />
-                            ) : (
-                                <NavLink />
-                            )}
-
+                        <a
+                            className={
+                                pathname === path ? NavLinkActive : NavLink
+                            }
+                        >
                             {title}
                         </a>
                     </Link>
