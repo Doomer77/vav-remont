@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
 import { HeaderContent } from '../../../features/header-content'
-import Navbar from '../navbar/Navbar'
-import Footer from '../footer/Footer'
+import Navbar from '../../../entities/navbar/Navbar'
 import Head from 'next/head'
 import { HeaderBox } from './styles'
 
@@ -17,7 +16,6 @@ const Header: FC = () => {
             <HeaderBox>
                 <Navbar />
                 <HeaderContent />
-                <Footer visible={true} />
             </HeaderBox>
         </>
     )

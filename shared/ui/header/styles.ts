@@ -11,8 +11,4 @@ export const HeaderBox = styled.header`
         url('bcg-image.png');
     background-size: cover;
     background-position: top;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
 `

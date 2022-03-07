@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import Heading from '../../shared/ui/heading/Heading'
+import Heading from '../../entities/heading/Heading'
 
 const Works: FC = () => {
     return (

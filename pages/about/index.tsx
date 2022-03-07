@@ -1,6 +1,6 @@
-import React, {FC} from "react";
-import Heading from "../../shared/ui/heading/Heading";
-import Navbar from '../../shared/ui/navbar/Navbar'
+import React, { FC } from 'react'
+import Heading from '../../entities/heading/Heading'
+import Navbar from '../../entities/navbar/Navbar'
 
 const About: FC = () => {
     return (

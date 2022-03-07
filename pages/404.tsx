@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import Heading from '../shared/ui/heading/Heading'
+import Heading from '../entities/heading/Heading'
 
 const Error: FC = () => {
     const router = useRouter()
