@@ -13,7 +13,7 @@ export const FeaturesBox = styled.section`
 export const FeaturesBcg = styled.div`
     width: 100%;
     height: 95vh;
-    background-image: url('bcg-features.jpg');
+    background-image: url('bg-views.jpg');
     position: absolute;
     top: 0;
     left: 0;
