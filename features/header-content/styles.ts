@@ -8,19 +8,6 @@ export const Content = styled.div`
     flex-direction: column;
 `
 
-export const ContentHeading = styled.h1`
-    margin-bottom: 2.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.2rem;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.6rem;
-    text-align: center;
-    @media (max-width: 56.25em) {
-        font-size: 2.5rem;
-    }
-`
-
 export const ContentMainText = styled.p`
     margin-bottom: 2.5rem;
     font-family: 'Rubik', sans-serif;
