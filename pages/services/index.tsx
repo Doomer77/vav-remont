@@ -4,7 +4,7 @@ import Heading from '../../entities/heading/Heading'
 const Services: FC = () => {
     return (
         <div>
-            <Heading text='Services' />
+            <Heading color='black' text='Services' />
             <div>Services</div>
         </div>
     )

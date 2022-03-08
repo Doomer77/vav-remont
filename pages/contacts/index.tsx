@@ -4,7 +4,7 @@ import Heading from '../../entities/heading/Heading'
 const Contacts: FC = () => {
     return (
         <div>
-            <Heading text='Contacts' />
+            <Heading color='black' text='Contacts' />
             <div>Contacts</div>
         </div>
     )

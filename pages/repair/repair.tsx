@@ -4,7 +4,7 @@ import Heading from '../../entities/heading/Heading'
 const Repair: FC = () => {
     return (
         <div>
-            <Heading text='Repair' />
+            <Heading color='black' text='Repair' />
             <div>Repair</div>
         </div>
     )

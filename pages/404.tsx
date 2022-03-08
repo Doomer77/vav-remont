@@ -11,8 +11,8 @@ const Error: FC = () => {
     }, [router])
     return (
         <div>
-            <Heading text='404' />
-            <Heading tag='h2' text='Страница не существует' />
+            <Heading color='black' text='404' />
+            <Heading color='black' text='Страница не существует' />
         </div>
     )
 }

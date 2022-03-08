@@ -6,7 +6,7 @@ const About: FC = () => {
     return (
         <div>
             <Navbar />
-            <Heading text='About' />
+            <Heading color='black' text='About' />
             <div>About</div>
         </div>
     )
