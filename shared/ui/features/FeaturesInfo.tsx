@@ -1,13 +1,14 @@
 import React, {FC} from 'react'
-import { FeaturesBox, FeaturesBcg } from './styles'
+import { FeaturesBox } from './styles'
 import Heading from '../../../entities/heading/Heading'
-
+import Features from '../../../features/feature-service/Feature'
+import { features } from '../../../features/feature-service/lib/features'
 
 const FeaturesInfo: FC = () => {
     return (
         <FeaturesBox>
-            <FeaturesBcg />
             <Heading text='Мы выполняем:' color='black'/>
+            <Features features={features} />
         </FeaturesBox>
     )
 }
