@@ -2,6 +2,7 @@ import React, { FC, useEffect, useState } from 'react'
 import Header from '../shared/ui/header/Header'
 import FeaturesInfo from '../shared/ui/features/FeaturesInfo'
 import { CircularProgress } from '@mui/material'
+import WorksInfo from '../shared/ui/works/Works'
 
 const Home: FC = () => {
     const [page, setPage] = useState<boolean>(true)
@@ -19,6 +20,7 @@ const Home: FC = () => {
         <div>
             <Header />
             <FeaturesInfo />
+            <WorksInfo />
         </div>
     )
 }

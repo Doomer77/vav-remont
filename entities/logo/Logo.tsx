@@ -1,10 +1,11 @@
 import React, { FC } from 'react'
-import { LogoLink, LogoImg } from './styles'
+import { LogoLink } from './styles'
+import Image from 'next/image'
 
 const Logo: FC = () => {
     return (
         <LogoLink href='/'>
-            <img src='/logo.svg' alt='Vav remont' className={LogoImg} />
+            <Image src='/logo.svg' width={107} height={74} alt='Vav remont' />
         </LogoLink>
     )
 }

@@ -16,12 +16,7 @@ export const FeatureStyle = css`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center
-`
-
-export const FeatureImgStyle = css`
-    width: 10rem;
-    height: 10rem;
+    align-items: center;
 `
 
 export const FeatureTextStyle = css`
