@@ -1,22 +1,12 @@
 import React, { FC } from 'react'
-import { FeaturesStyle, FeatureStyle, FeatureTextStyle } from './styles'
 import Image from 'next/image'
+import { FeaturesStyle, FeatureStyle, FeatureTextStyle } from './styles'
+import { FeatureItemProps } from './types'
 
-interface FeatureProps {
-    id: number
-    title: string
-    src: string
-    alt: string
-}
-
-interface FeatureItemProps {
-    features: FeatureProps[]
-}
-
-const Features: FC<FeatureItemProps> = ({ features }) => {
+const Feature: FC<FeatureItemProps> = ({ features }) => {
     return (
         <div className={FeaturesStyle}>
-            {features.map((item: FeatureProps) => {
+            {features.map((item) => {
                 return (
                     <div key={item.id} className={FeatureStyle}>
                         <Image
@@ -33,4 +23,4 @@ const Features: FC<FeatureItemProps> = ({ features }) => {
     )
 }
 
-export default Features
+export default Feature

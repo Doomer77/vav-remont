@@ -1,8 +1,8 @@
 import React, { FC, useEffect, useState } from 'react'
 import Header from '../shared/ui/header/Header'
-import FeaturesInfo from '../shared/ui/features/FeaturesInfo'
+import FeaturesInfo from '../shared/ui/features-info/FeaturesInfo'
 import { CircularProgress } from '@mui/material'
-import WorksInfo from '../shared/ui/works/Works'
+import WorksInfo from '../shared/ui/works-info/Works'
 
 const Home: FC = () => {
     const [page, setPage] = useState<boolean>(true)
